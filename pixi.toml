@@ -1,0 +1,22 @@
+[project]
+authors = ["James Myatt <james.myatt@capgemini.com>"]
+channels = ["https://prefix.dev/conda-forge"]
+name = "tsrlmc"
+platforms = ["win-64" ,"linux-64"]
+
+[tasks]
+script="python run_rlmc.py"
+
+[environments]
+default = ["cpu"]
+
+[dependencies]
+python = "~=3.12.0"
+scikit-learn = ">=1.6,<2"
+sktime = ">=0.36.0,<2"
+tqdm = ">=4,<5"
+numpy = ">=2.1,<3"
+scipy = ">=1.15,<2"
+
+[feature.cpu.dependencies]
+pytorch-cpu = ">=2.5.1,<3"
