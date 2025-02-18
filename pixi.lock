@@ -90,6 +90,7 @@ environments:
       - conda: https://prefix.dev/conda-forge/noarch/pytz-2024.1-pyhd8ed1ab_0.conda
       - conda: https://prefix.dev/conda-forge/linux-64/qhull-2020.2-h434a139_5.conda
       - conda: https://prefix.dev/conda-forge/linux-64/readline-8.2-h8228510_1.conda
+      - conda: https://prefix.dev/conda-forge/linux-64/ruff-0.9.6-py312h2156523_0.conda
       - conda: https://prefix.dev/conda-forge/noarch/scikit-base-0.12.0-pyhecae5ae_1.conda
       - conda: https://prefix.dev/conda-forge/linux-64/scikit-learn-1.6.1-py312h7a48858_0.conda
       - conda: https://prefix.dev/conda-forge/linux-64/scipy-1.15.2-py312ha707e6e_0.conda
@@ -180,6 +181,7 @@ environments:
       - conda: https://prefix.dev/conda-forge/win-64/pytorch-cpu-2.6.0-cpu_mkl_h8b52ce0_100.conda
       - conda: https://prefix.dev/conda-forge/noarch/pytz-2024.1-pyhd8ed1ab_0.conda
       - conda: https://prefix.dev/conda-forge/win-64/qhull-2020.2-hc790b64_5.conda
+      - conda: https://prefix.dev/conda-forge/win-64/ruff-0.9.6-py312h4e4d446_0.conda
       - conda: https://prefix.dev/conda-forge/noarch/scikit-base-0.12.0-pyhecae5ae_1.conda
       - conda: https://prefix.dev/conda-forge/win-64/scikit-learn-1.6.1-py312h816cc57_0.conda
       - conda: https://prefix.dev/conda-forge/win-64/scipy-1.15.2-py312h451d5c4_0.conda
@@ -1990,6 +1992,34 @@ packages:
   license_family: GPL
   size: 281456
   timestamp: 1679532220005
+- conda: https://prefix.dev/conda-forge/linux-64/ruff-0.9.6-py312h2156523_0.conda
+  sha256: 1f06371eb227641281d8fab2d6c992b34c64ec17ca228cbb189724873947250b
+  md5: ce728f235d5b4651f6e2dcf4918924c6
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=13
+  - libstdcxx >=13
+  - python >=3.12,<3.13.0a0
+  - python_abi 3.12.* *_cp312
+  constrains:
+  - __glibc >=2.17
+  license: MIT
+  license_family: MIT
+  size: 8571679
+  timestamp: 1739203442927
+- conda: https://prefix.dev/conda-forge/win-64/ruff-0.9.6-py312h4e4d446_0.conda
+  sha256: 4e0e1d160e58a3b9dcba8300c101bcc12dbd4764b5be2b2dfc0dac9be286e10b
+  md5: 4f81410987d1c5e7e6d9cc815ab4e47b
+  depends:
+  - python >=3.12,<3.13.0a0
+  - python_abi 3.12.* *_cp312
+  - ucrt >=10.0.20348.0
+  - vc >=14.2,<15
+  - vc14_runtime >=14.29.30139
+  license: MIT
+  license_family: MIT
+  size: 7613469
+  timestamp: 1739204131113
 - conda: https://prefix.dev/conda-forge/noarch/scikit-base-0.12.0-pyhecae5ae_1.conda
   sha256: 09393f7f2a27fa2a18fc840e7a9a7250d9922b8e2849dbe5fbf19922c9f857f7
   md5: 86fa6e081152b2e2988bac9d4df9cda7
